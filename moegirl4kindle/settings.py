@@ -65,10 +65,16 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scrapy.pipelines.images.ImagesPipeline': 1,
+    'moegirl4kindle.pipelines.images.KindleImagesPipeline': 1,
 }
 
 IMAGES_STORE = 'images/'
+
+IMAGES_THUMBS = {
+    # 'Touch_KT2_KT3': (600, 800),
+    'PW_PW2': (758, 1024),
+    # "KV/PW3/KOA": (1072, 1448),
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
