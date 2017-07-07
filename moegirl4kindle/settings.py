@@ -70,10 +70,11 @@ ITEM_PIPELINES = {
 
 IMAGES_STORE = 'images/'
 
+# Comment out unneeded as you wish
 IMAGES_THUMBS = {
-    # 'Touch_KT2_KT3': (600, 800),
+    'Touch_KT2_KT3': (600, 800),
     'PW_PW2': (758, 1024),
-    # "KV/PW3/KOA": (1072, 1448),
+    "KV/PW3/KOA": (1072, 1448),
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
